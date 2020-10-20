@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="TraceSharing - Cel mai complet sistem de monitorizare auto din Romania.">
+	<meta name="keywords" content="transport gps localizare locatie romania international camioane monitorizare solutii trackinggps">
+	<meta name="author" content="Radu Muntean">
+	<title>Trace Sharing | Sisteme complete de tracking GPS</title>
+    <link rel="icon" type="image/ico" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <!-- L O A D E R -->
+    <div class="load-wrapper">
+        <div class="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+    <!-- END -->
+
+    <!-- N A V B A R -->
+    <header>
+        <div class="logo">
+            <img src="assets/tslogo.svg" alt="logo tracesharing">
+        </div>
+        <div class="limba-lg d-xl-none">
+            <img class="lang-ribbon" src="assets/ribn.svg" alt="language ribbon">
+            <div class="lang-container">
+                <a class="ro-lang" href="">Ro</a>
+                <a class="en-lang" href="">En</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="nav-background nav-scrolled" id="navcontainer"></div>
+            <nav class="navbar nav-desktop justify-content-between col-lg-11 col-xl-10 offset-xl-2 offset-lg-1 col-md-11 offset-md-1">
+                <ul class="links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Pachete si Optiuni</a></li>
+                    <li><a href="">Solutii de Tracking</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div class="limba d-md-none d-lg-block">
+                    <span class="iconify langicon" data-inline="false" data-icon="dashicons:flag" style="color: #ffffff; font-size: 20px;"></span>
+                    <a href="">Ro</a>
+                    <a href="">En</a>
+                </div>
+
+<!-- B U T O A N E    L O G I N  -->
+
+                <div class="login-buttons">
+                    <button class="login-btn">Log in</button>
+                    <button class="tsc-btn">Cod TSC</button>
+                </div>
+
+<!-- E N D     B U T O A N E    L O G I N -->
+
+            </nav>
+        </div>
+        <nav class="navbar nav-mobile col-12">
+            <div class="logo-mobile d-none d-sm-block">
+                <img src="assets/tslogosimple.svg" alt="logo tracesharing">
+            </div>
+            <div class="logo-mobile d-sm-none d-block">
+                <img src="assets/tslogoshort.svg" alt="logo tracesharing">
+            </div>
+            <div class="login-buttons" style="
+            position: absolute;
+            right: 55px;">
+                <button class="login-btn">Log in</button>
+                <button class="tsc-btn">Cod TSC</button>
+            </div>
+            <i id="hamburger" class="fas fa-bars"></i>
+        </nav>
+        <div class="overlay-mobile"></div>
+        <div id="navmobilecontent" class="nav-mobile-content">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Pachete si Optiuni</a></li>
+                <li><a href="">Solutii de Tracking</a></li>
+                <li><a href="">Contact</a></li>
+                <li>Limba</li>
+            </ul>
+        </div>
+    </header>
+    <!-- END -->
+
+    <main id="maincontent">
+        <section class="container-fluid">
+            <div class="hero row">
+                <div class="leftside col-xl-9 col-lg-8 col-md-12">
+                    <div class="background-hero-md d-lg-none"></div>
+                    <div class="opener d-flex flex-column justify-content-center col-xl-6 col-lg-10 offset-lg-2 offset-xl-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12">
+                        <h1 id="intersector">De 12 ani oferim solutii complete de localizare si monitorizare auto.</h1>
+                        <div class="opener-subtitle">
+                            <h4>Trackingul nu a fost niciodata mai simplu.</h4>
+                            <p>Cu serviciul nostru puteti acum monitoriza date complexe de urmarire ale autovehiculelor, de la locatia live pana la consumul de combustibil, istoric si grafice care va scad din costuri si imbunatatesc performanta companiei.</p>
+                        </div>
+                        <div class="buttons-hero d-flex justify-content-center justify-content-sm-start">
+                            <button class="solutii-btn">Solutii Tracking</button>
+                            <button class="pachete-btn">Pachete si Optiuni</button>
+                        </div>                
+                    </div>
+                    <img class="pattern-svg d-none d-lg-block" src="assets/waveshape.svg" alt="wave shape pattern">
+                </div>
+                <div class="rightside col-xl-3 col-lg-4 d-none d-lg-block d-xl-block">
+                    <div class="map-image d-none d-xl-block">
+                    </div>            
+                </div>             
+            </div>
+        </section>
+        <section class="cevaoferim pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col titlu-cevaoferim text-center d-flex flex-column justify-content-center">
+                        <h1>Ce va oferim</h1>
+                        <div class="linebreak mt-3 mb-3"></div>
+                        <p>TraceSharing este cel mai complet sistem de tracking auto din Romania.</p>
+                    </div>                    
+                </div>
+                <div class="row puncte-forte mt-5">
+                    <div class="item-forte flex-md-column text-md-center pl-md-2 pr-md-24 col-lg-4 col-md-6 mb-3 pb-4 mb-sm-3 text-sm-left text-left d-flex justify-content-start align-items-center flex-sm-row pl-5">
+                        <span class="iconify" data-inline="false" data-icon="fe:location" style="color: #024053; font-size: 65px; margin-bottom: 21px;"></span>
+                        <div>
+                            <h4>Locatia flotei, oricand si oriunde</h4>
+                            <p>Poti vizualiza live unde se afla flota oriunde pe glob, de pe desktop sau mobile, la orice ora.</p>
+                        </div>
+                    </div>
+                    <div class="item-forte flex-md-column text-md-center pl-md-2 pr-md-2 col-xl-4 col-lg-4 col-md-6 mb-3 pb-4 mb-sm-3 text-sm-left text-left d-flex justify-content-start align-items-center flex-sm-row pl-5">
+                        <span class="iconify" data-inline="false" data-icon="clarity:fuel-line" style="color: #024053; font-size: 56px;"></span>
+                        <div>
+                            <h4>Monitorizarea combustibilului </h4>
+                            <p>Vezi consumul <em>live</em>, cu istoric si grafice. Asa poti detecta nereguli, activitati suspecte si imbunatati performanta si costurile in timp.</p>
+                        </div>
+                    </div>
+                    <div class="item-forte flex-md-column text-md-center pl-md-2 pr-md-2 col-xl-4 col-lg-4 col-md-6 mb-3 pb-4 mb-sm-3 text-sm-left text-left d-flex justify-content-start align-items-center flex-sm-row pl-5">
+                        <span class="iconify" data-inline="false" data-icon="fa-solid:money-check-alt" style="color: #024053; font-size: 53px;"></span>
+                        <div>
+                            <h4>Taxare HU-GO automata</h4>
+                            <p>La trecerea prin Ungaria, vigneta se achita automat prin detectarea pozitiei GPS. Astfel te poti feri de amenzi si timp pierdut in plus.</p>
+                        </div>
+                    </div>
+                    <div class="item-forte flex-md-column text-md-center pl-md-2 pr-md-2 col-xl-4 col-lg-4 col-md-6 mb-3 pb-4 mb-sm-3 text-sm-left text-left d-flex justify-content-start align-items-center flex-sm-row pl-5">
+                        <span class="iconify" data-inline="false" data-icon="teenyicons:history-solid" style="color: #024053; font-size: 52px;"></span>
+                        <div>
+                            <h4>Istoric nelimitat, acces de pe mobile sau desktop</h4>
+                            <p>Istoricul cu grafice pentru fiecare vehicul in parte. Astfel, poti evalua trenduri precum stilurile de condus si lua decizii care scad costurile companiei.</p>
+                        </div>
+                    </div>
+                    <div class="item-forte flex-md-column text-md-center pl-md-2 pr-md-2 col-xl-4 col-lg-4 col-md-6 mb-3 pb-4 mb-sm-3 text-sm-left text-left d-flex justify-content-start align-items-center flex-sm-row pl-5">
+                        <span class="iconify" data-inline="false" data-icon="ant-design:share-alt-outlined" style="color: #024053; font-size: 58px;"></span>
+                        <div>
+                            <h4>Sharing: arata locatia partenerilor si prietenilor</h4>
+                            <p>Cu un cod generat de noi, prietenii si partenerii iti pot vizualiza vehiculul oricand fara sa aiba cont, la sectiunea Cod TSC.</p>
+                        </div>
+                    </div>
+                    <div class="item-forte flex-md-column text-md-center pl-md-2 pr-md-2 col-xl-4 col-lg-4 col-md-6 mb-3 pb-4 mb-sm-3 text-sm-left text-left d-flex justify-content-start align-items-center flex-sm-row pl-5">
+                        <span class="iconify" data-inline="false" data-icon="ic:round-support-agent" style="color: #024053; font-size: 58px;"></span>
+                        <div>
+                            <h4>Suport tehnic telefonic si asistenta</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </section>
+        <section class="achievements container-fluid pt-md-5 pb-md-5 pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="key1 text-center col-md-4 col-12 col-sm-12 pb-3 pt-3 pb-sm-3 pt-sm-3">
+                        <div class="keytitle">
+                            <h2 class="numar">10</h2>
+                            <span class="iconify" data-inline="false" data-icon="fa-solid:award" style="color: #ffffff; font-size: 30px;"></span>
+                        </div>
+                        <p>ani in industrie</p>
+                    </div>
+                    <div class="key2 text-center col-md-4 col-12 col-sm-12 pb-3 pt-3 pb-sm-3 pt-sm-3">
+                        <div class="keytitle">
+                            <h2 class="numar">100</h2>
+                            <span class="iconify" data-inline="false" data-icon="bi:people" style="color: #ffffff; font-size: 38px;"></span>
+                        </div>
+                        <p>clienti multumiti</p>
+                    </div>
+                    <div class="key3 text-center col-md-4 col-12 col-sm-12 pb-3 pt-3 pb-sm-3 pt-sm-3">
+                        <div class="keytitle">
+                            <h2 class="numar">1000</h2>
+                            <span class="iconify" data-inline="false" data-icon="clarity:truck-line" style="color: #ffffff; font-size: 45px;"></span>
+                        </div>
+                        <p>vehicule monitorizate</p>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section class="download-app container-fluid pt-4 pb-5">
+            <div class="download-content row d-flex flex-column justify-content-center align-items-center text-center">
+                <h1>Descarca Aplicatia</h1>
+                <p class="col-10 col-sm-8">Aplicatia noastra este disponbila in magazinul Google Play, sau App Store pentru iOS.</p>
+                <a class="download-button">
+                    <span class="iconify" data-inline="false" data-icon="ant-design:cloud-download-outlined" style="color: #ffffff; font-size: 42px;"></span>
+                    <div>
+                        <p>Tracesharing App</p>
+                        <h3>ANDROID</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="footer container-fluid">
+            <div class="pb-3 pt-5">
+                <div class="row pl-0 pl-md-5">
+                    <div class="company footer-area col-lg-3 col-xl-3 offset-xl-1 pl-lg-4 col-md-4 col-sm-4 col-6 pl-lg-5 pt-2">
+                        <img src="assets/tslogo-footer.svg" alt="tracesharing logo">
+                        <p>SM Aero Computers srl<br>
+                            str.Retezatului nr.41, Satu Mare<br> ROMÂNIA<br>
+                            J30/568/2005, RO 17545061                        
+                            </p>
+                    </div>
+                    <div class="clienti footer-area col-lg-3 col-xl-2 col-md-4 col-sm-4 col-6 pt-5 pt-lg-0">
+                        <div class="footer-title">
+                            <h4>Clienti Existenti</h4>
+                        </div>
+                        <a href="">Log in</a>
+                        <a href="">Cod TSC</a>
+                        <a href="">Aplicatia Tracesharing</a>
+                    </div>
+                    <div class="meniu footer-area col-lg-2 col-xl-2 col-md-4 col-sm-4 col-6 pt-5 pt-lg-0">
+                        <div class="footer-title">
+                            <h4>Meniu</h4>
+                        </div>
+                        <a href="">Home</a>
+                        <a href="">Pachete si Optiuni</a>
+                        <a href="">Solutii de Tracking</a>
+                        <a href="">Despre Noi</a>
+                        <a href="">Contact</a>
+                    </div>
+                    <div class="contact footer-area col-lg-4 col-xl-3 col-md-4 col-sm-6 col-6 offset-md-4 offset-sm-4 offset-lg-0 pt-5 pt-lg-0">
+                        <div class="footer-title">
+                            <h4>Contact</h4>
+                        </div>
+                        <h5>Dispecerat Tracesharing</h5>
+                        <a class="telmobil">
+                            <span class="iconify" data-inline="false" data-icon="ant-design:phone-outlined" style="color: #ffffff; font-size: 16px;"></span>
+                            <p>0727-338298</p>
+    
+                        </a>
+                        <a class="telfix">
+                            <span class="iconify" data-inline="false" data-icon="entypo:old-phone" style="color: #ffffff; font-size: 16px;"></span>
+                            <p>0361-401202</p>
+    
+                        </a>
+                        <a class="mail">
+                            <span class="iconify" data-inline="false" data-icon="ion:mail-outline" style="font-size: 16px;"></span>
+                            <p>tracesharing@sm-aerocomp.ro</p>
+                        </a>
+                        <p class="orar"><em>Orar:</em>&nbsp;&nbsp;&nbsp;08:00 - 18:00</p>
+                        <p class="urgente">Urgente: 24/24</p>
+                    </div>                                 
+                </div>
+                <div class="copyright col-12 text-center">
+                    <p>©2020 Trace Sharing, SM Aero Computers. Toate drepturile rezervate. <a href=""><em>Design & Dev - Radu Muntean.</em></a></p>
+                </div> 
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>
