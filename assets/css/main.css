@@ -760,6 +760,11 @@ header {
     .limba-lg {
         display: none;
     }
+    .login-buttons button {
+        padding: 8px 5px;
+        width: 90px;
+        font-size: .9em;
+    }
   }
 @media only screen and (min-width: 841px) {
     .nav-mobile, .nav-mobile-content {
