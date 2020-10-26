@@ -152,7 +152,7 @@ html {
 .nav-mobile-content {
     position: fixed;
     height: 100vh;
-    width: auto;
+    min-width: 280px;
     max-width: 350px;
     background: var(--footer);
     top: 0;
@@ -162,7 +162,7 @@ html {
     align-items: center;
     justify-content: flex-start;
     font-family: "ProximaBold";
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-right: 30px;
     opacity: 1;
     transform: translateX(100%);
@@ -172,7 +172,7 @@ html {
     width: 100%;
 }
 .nav-mobile-content ul li {
-    padding: 6px 0px;
+    padding: 10px 0px;
 }
 .nav-mobile-content li, .nav-mobile-content a {
     list-style: none;
@@ -183,6 +183,18 @@ html {
     transform: translateX(0%);
 	opacity: 1;
 	visibility: visible;
+}
+.mobile-language p {
+    padding-bottom: 5px !important;
+    font-size: .85em;
+    opacity: .7;
+}
+.mobile-language a {
+    font-family: "ProximaRegular", Arial, sans-serif;
+    padding-right: 20px;
+    font-size: .85em;
+    opacity: .7;
+       
 }
 
 /* ========  N A V  &   M E N U - D E S K T O P ============ */
@@ -225,6 +237,7 @@ header {
     list-style: none !important;
     display: flex;
     margin-bottom: 0px;
+    padding-inline-start: 20px;
 }
 .nav-desktop ul li {
     margin-right: 40px;
@@ -267,26 +280,18 @@ header {
 }
 .limba-lg {
     position: fixed;
-    top: 81px;
-    right: -45px;
+    top: 70px;
+    right: 20px;
     display: flex;
     flex-direction: row;
     z-index: 2;
 }
-.limba-lg div:nth-child(1) {
-    position: relative;
+.limba-lg >* {
+    margin: 0px 8px;
 }
-.lang-container {
-    position: absolute;
-    left: 30px;
-    top: 3px;
-}
-.lang-ribbon {
-    height: 25px;
-    right: 0px;
-    filter: drop-shadow(-16px -9px 49px #000000);
-    -webkit-filter: drop-shadow(-16px -9px 49px #000000);
-    -moz-filter: drop-shadow(-16px -9px 49px #000000);  
+.limba-lg a {
+    color: white;
+    text-decoration: none;
 }
 
 }
@@ -733,7 +738,7 @@ header {
         padding: 3px 5px;
         width: 80px;
     }
-  }
+}
 
 /* breaking point where mobile menu enters */
 @media only screen and (max-width: 840px) {
@@ -779,12 +784,7 @@ header {
 
 /* at MEDIUM screen (MD Bootstrap) */
 @media only screen and (max-width: 991px) {
-    /* .opener h1 {
-        font-size: 2em;
-    }
-    .opener h4 {
-        font-size: 17px;
-    } */
+    
 }
 
 /* at SMALL screen (SM Bootstrap) and bellow */
