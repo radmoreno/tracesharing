@@ -152,7 +152,7 @@ html {
 .nav-mobile-content {
     position: fixed;
     height: 100vh;
-    min-width: 280px;
+    min-width: 300px;
     max-width: 350px;
     background: var(--footer);
     top: 0;
@@ -183,6 +183,10 @@ html {
     transform: translateX(0%);
 	opacity: 1;
 	visibility: visible;
+}
+.mobile-language {
+    position: absolute;
+    bottom: 100px;
 }
 .mobile-language p {
     padding-bottom: 5px !important;
