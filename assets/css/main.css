@@ -289,6 +289,10 @@ header {
     display: flex;
     flex-direction: row;
     z-index: 2;
+    background: black;
+    padding: 10px;
+    border-radius: 30px;
+    opacity: .5;
 }
 .limba-lg >* {
     margin: 0px 8px;
