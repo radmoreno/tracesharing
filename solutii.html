@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/solutii.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- MD Bootstrap -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
 </head>
 <body>
     <!-- L O A D E R -->
@@ -102,18 +108,20 @@
         <section class="sectiunefeatures">
             <div class="container-fluid">
                 <div class="row breadcrumb" id="gps">
-                    <div class="col-xl-4 offset-xl-2 offset-lg-1 offset-md-1">
+                    <div class="col-xl-7 offset-xl-2 offset-lg-1 offset-md-1 d-flex align-items-center">
+                        <a href="#">< &nbsp;<strong>Pachete si Optiuni</strong></a>
+                        <h5 style="margin: 0px !important;">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</h5>
                         <a href="index.html">Home &nbsp;&nbsp;></a>
                         <a href="">&nbsp;&nbsp; Solutii de Tracking</a>
                     </div>
                 </div>
-                <div class="row pachet-crumb d-md-none d-lg-none d-xl-none d-sm-block">
+                <!-- <div class="row pachet-crumb d-md-none d-lg-none d-xl-none d-sm-block" >
                     <div class="col-xl-4 offset-xl-2 offset-lg-1 offset-md-1 d-sm-block d-md-none">
                         <a href="">< &nbsp;&nbsp;Vezi pachete si optiuni</a>
                     </div>
-                </div>
-                <div class="row solutii-row">
-                    <div class="meniusticky col-xl-2 col-lg-3 col-md-3 d-md-block d-none">
+                </div> -->
+                <div class="row solutii-row" id="meniusticky">
+                    <div class="meniusticky col-xl-2 col-lg-3 col-md-3 d-md-block d-none" >
                         <div class="cuprins" id="cuprins">
                             <a href="#gps">
                                 <h6  class="point">1. Localizarea prin GPS</h6>
@@ -144,8 +152,44 @@
                             <img src="assets/img/solutii/1.svg" alt="">
                             <h3>Acces la harta ta, oriunde</h3>
                             <p class="pr-0 pr-sm-3 pr-md-5 pr-lg-5 pr-xl-5">Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor.  Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.</p>
-                            <a href="#" class="moreinfo" id="comb"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            <a href="#" class="moreinfo" id="comb" data-toggle="modal" data-target="#centralModalSm"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="buton-modal btn btn-primary" data-toggle="modal" data-target="#centralModalSm">
+                                Detalii
+                            </button>
+                            <!-- Central Modal Small -->
+                            <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                            
+                                <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Localizarea, aproape de tine</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
+                                        <br>
+                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
+                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
+                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
+                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- Central Modal Small -->
                             <div class="breakline"></div>
+                            
                         </div>
                         <div class="item" id="monitorizare">
                             <h1>Monitorizarea Combustibilului</h1>
@@ -172,7 +216,7 @@
                             <div class="breakline"></div>
                         </div>
                     </div>
-                    <div class="pachetesticky col-xl-3 offset-xl-0 d-xl-block d-none">
+                    <div class="pachetesticky col-xl-3 offset-xl-0 d-xl-block d-lg-none d-md-block col-md-9 offset-md-3">
                         <div class="pachete">
                             <div class="pachete-title">
                                 <h3>PACHETE</h3>
@@ -211,7 +255,7 @@
                             <div class="pachete-detalii">
                                 <a href="">
                                     <h3>VEZI DETALII</h3>
-                                    <span class="iconify" data-inline="false" data-icon="bx:bx-chevron-left-circle" style="font-size: 27px;"></span>
+                                    <span class="iconify" data-inline="false" data-icon="bx:bx-chevron-left-circle" style="font-size: 23px;"></span>
                                 </a>
                             </div>
                         </div>
@@ -304,11 +348,18 @@
                     <p>©2020 Trace Sharing, SM Aero Computers. Toate drepturile rezervate. <a target="blank" href="http://radu-m.myportfolio.com/"><em>Design & Dev - Radu Muntean.</em></a></p>
                 </div> 
             </div>
-        </section>
-        
+        </section>        
     </main>
     <script src="script.js"></script>
     <script src="solutii.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 </body>
 </html>

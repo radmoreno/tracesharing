@@ -30,11 +30,11 @@
 }
 .titlu-pagina h1 {
     font-family: "ProximaBold", Arial, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 .titlu-pagina h4 {
     font-family: "ProximaRegular", Arial, sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: -3%;
     line-height: 1.6;
     padding-top: 20px;
@@ -52,11 +52,30 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022132",endColorstr="#294c5f",GradientType=1);
     opacity: .6;
 }
+/* limba setari custom pt pagina asta */
+
+.limba-lg {
+    padding: 6px 10px;
+    top: 66px;
+}
+
 
 /* SOLUTII CONTINUT */
 .cuprins a, .breadcrumb a, .item a {
     color: inherit;
-    text-decoration: none;
+}
+.item .buton-modal {
+    background: none !important;
+    color: #848484;
+    border: #848484 solid 2px;
+    box-shadow: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    transition: 200ms all ease;
+}
+.buton-modal:hover {
+    color: black;
+    border: solid 2px black;
 }
 
 .solutii-row {
@@ -88,9 +107,10 @@
     top: 60px;
     background: #f7f7f7;
     z-index: 1;
-    color: #BDBDBD;
+    color: #848484;
     padding-left: 40px;
     margin-bottom: 0px!important;
+    font-size: 13.5px;
 }
 .pachet-crumb {
     position: sticky;
@@ -116,15 +136,15 @@
     background: #BDBDBD;
 }
 .continut {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
 }
 .item >* {
     padding: 10px 0px;
 }
 .item h1 {
     font-family: "ProximaBold", Arial, sans-serif;
-    font-size: 35px;
+    font-size: 32px;
     padding-bottom: 0px;;
 }
 .item h3 {
@@ -136,10 +156,11 @@
 }
 .item p {
     font-family: "ProximaRegular", Helvetica, Arial, sans-seri;
-    font-size: 18px;
-    letter-spacing: 0.4px;
-    line-height: 1.5;
-    /* padding-right: 150px; */
+    font-size: 16px;
+    line-height: 1.6;
+}
+.item p, .item img {
+    padding-top: 15px;
 }
 .moreinfo {
     display: flex;
@@ -225,13 +246,23 @@
     font-family: var(--bold);
 }
 .pachete-detalii a h3 {
-    font-size: 25px;
+    font-size: 22px;
+    transition: 220ms all ease-in-out;
 }
 .pachete-detalii svg {
-    transform: rotate(180deg) !important;
     margin-left: 10px;
+    transition: 220ms all ease-in-out;
+    transform: rotate(90deg) !important;   
     
 }
+.pachete-detalii a:hover > svg {
+    margin-left: 10px;
+    transform: rotate(180deg) !important;   
+}
+.pachete-detalii a:hover > h3 {
+    margin-left: 10px;   
+}
+
 
 
 /* hovers */
@@ -247,7 +278,7 @@
     opacity: 1;
 }
 .item a:hover > img {
-    transform: translateX(10px);
+    transform: translateX(6px);
     color: var(--orange);
 }
 
@@ -346,28 +377,98 @@
 }
 
 /* MEDIA QUERY BOOTSTRAP */
+
+/* at EXTRA SMALL screen (XS Bootstrap) */
 @media only screen and (max-width: 575px)  {
     .butoncontact {
         display: block;
         width: 100%;
         text-align: center;
     }
-    .breadcrumb, .pachet-crumb {
+    .breadcrumb {
         padding-left: 0px !important;
     }
-    .continut-instalare {
-        
+    .pachete {
+        margin-left: none;
     }
 }
 
 @media (min-width: 1200px) {
-.col-xl-2 {
-    flex: 0 0 20.666667%;
-    max-width: 19.666667%;
+    .col-xl-2 {
+        flex: 0 0 20.666667%;
+        max-width: 19.666667%;
+    }
+    .col-xl-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 55.333333%;
+    }
+
+/* media query pentru meniu pachete sticky */
+
+@media only screen and (max-width: 991px) {
+    .pachete {
+        width: 85%;
+        margin-left: 35px;
+    }
 }
-.col-xl-7 {
-    -ms-flex: 0 0 58.333333%;
-    flex: 0 0 58.333333%;
-    max-width: 55.333333%;
+
+
+/* at SMALL screen (SM Bootstrap) and bellow */
+@media only screen and (max-width: 767px) {
+    .pachetesticky .pachete {
+       width: 100%;
+       margin-left: 0px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

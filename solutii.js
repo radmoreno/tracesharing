@@ -4,7 +4,7 @@
 
 // For the HTML menu items, there are two H6 elements, one over the other with absolute position: one with normal text, the other with bold text. On switch, both get classes added that turn up/down the opacity to the respective element. This creates a visual illusion that the item is highlighted.
 
-const stickyMenu = document.getElementById('cuprins');
+const intersecting = document.getElementById('intersecting');
 const div1 = document.getElementById('localizare');
 const div2 = document.getElementById('monitorizare');
 const div3 = document.getElementById('taxa');
@@ -23,10 +23,11 @@ var bold3 = document.getElementsByClassName('null')[1];
 var bold4 = document.getElementsByClassName('null')[2];
 var bold5 = document.getElementsByClassName('null')[3];
 
+
 // First Observer
 
 const options1 = {
-    rootMargin: "-420px 0px 0px 0px"
+    rootMargin: "-420px 0px 0px 0px",
 };
 
 const divOneObserver = new IntersectionObserver
