@@ -1,0 +1,310 @@
+/* color pallette */
+
+:root {
+    --blue: #68B2E5;
+    --yellow: #FFC244;
+    --dark: #262A3E;
+    --darker: #1B1E2E;
+    --gray: #848484;
+    --pink:#FC1A57;
+    --bold: "ProximaBold", Helvetica, Arial, sans-serif;
+    --thin: "ProximaThin", Helvetica, Arial, sans-serif;
+    --regular: "ProximaRegular", Helvetica, Arial, sans-serif;
+}
+
+.logo {
+    top: 86px;
+    left: 2px;
+}
+/* limba setari custom pt pagina asta */
+
+.limba-lg {
+    padding: 6px 10px;
+    top: 66px;
+}
+
+
+/* SOLUTII TITLU (HERO & TITLE) */
+
+.titlu-pagina {
+    position: relative;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: white;
+}
+.titlu-pagina h1 {
+    font-family: "ProximaBold", Arial, sans-serif;
+    font-size: 40px;
+}
+.titlu-pagina h4 {
+    font-family: "ProximaRegular", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: -3%;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+.titlu-pagina a {
+    text-decoration: none;
+    color: inherit;
+}
+.bgoverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .7;
+}
+
+.departamente {
+    margin-top: 20px;
+    display: flex; 
+    align-items: center;
+    transition: all 200ms ease-in-out;
+    width: fit-content;
+    
+}
+.departamente p {
+    font-family: var(--bold);
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    margin-right: 10px;
+    position: relative;
+}
+.departamente p::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    transition: all 200ms ease-in-out;
+
+}
+.departamente:hover > .chevron {
+    transform: translateX(10px) rotate(90deg);
+}
+.departamente:hover > p::before {
+    width: 100%;
+}
+
+.chevron {
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-right: 1px;
+    transition: all 200ms ease-in-out;
+}
+.chevron svg {
+    transform: rotate(180deg) !important;
+    color: black;
+}
+
+.suna p {
+    /* color: var(--pink); */
+}
+.suna p::before {
+    background: var(--pink);
+}
+.suna .chevron {
+    background: var(--pink) !important;
+}
+.suna .chevron svg {
+    color: white;
+}
+.suna:hover > .chevron {
+    transform: translateX(10px);
+}
+
+/* card detalii firma */
+
+.card-firma {
+    margin-top: 50px;
+    padding: 30px;
+    background: var(--yellow);
+    width: fit-content;
+    color: black;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.card-firma h3 {
+    font-size: 24px;
+    font-family: var(--bold);
+    padding-bottom: 15px;
+    
+}
+
+/* Sectiunea cu Departamentele */
+.telefoane, .item-dep {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.name {
+    margin-bottom: 6px;
+    
+}
+.info-contact {
+    display: flex;
+    margin: 4px 0px;
+}
+.info-contact:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.info-contact {
+    text-decoration: none;
+    color: black;
+}
+.info-contact >* {
+    margin-right: 8px;
+}
+.telefoane-continut h5 {
+    font-family:var(--bold);
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+.suna-acum {
+    color:var(--pink);
+}
+.suna-acum p {
+    font-size: 17px;
+}
+.suna-acum .chevron {
+    background: var(--pink);
+    width: 20px;
+    height: 20px;
+}
+.suna-acum:hover {
+    text-decoration:none;
+    color: var(--pink);
+}
+.suna-acum:hover > .chevron {
+    transform: translateX(10px) !important;
+}
+.suna-acum p::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background:var(--pink);
+    position: absolute;
+    bottom: 0;
+    transition: all 200ms ease-in-out;
+}
+.suna-acum svg {
+    color:white;
+    padding-right: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY BOOTSTRAP */
+
+/* at EXTRA SMALL screen (XS Bootstrap) */
+@media only screen and (max-width: 575px)  {
+   
+}
+
+@media (min-width: 1200px) {
+    .col-xl-2 {
+        flex: 0 0 20.666667%;
+        max-width: 19.666667%;
+    }
+    .col-xl-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 55.333333%;
+    }
+
+/* media query pentru meniu pachete sticky */
+
+@media only screen and (max-width: 991px) {
+    
+}
+
+
+/* at SMALL screen (SM Bootstrap) and bellow */
+@media only screen and (max-width: 767px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

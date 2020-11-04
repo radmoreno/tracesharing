@@ -6,7 +6,7 @@
 	<meta name="description" content="TraceSharing - Cel mai complet sistem de monitorizare auto din Romania.">
 	<meta name="keywords" content="transport gps localizare locatie romania international camioane monitorizare solutii trackinggps">
 	<meta name="author" content="Radu Muntean">
-	<title>Trace Sharing | Sisteme complete de tracking GPS</title>
+	<title>Trace Sharing | Solutii Tracking | Sisteme complete de tracking GPS</title>
     <link rel="icon" type="image/ico" href="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -47,7 +47,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">Pachete si Optiuni</a></li>
                     <li><a href="">Solutii de Tracking</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="limba d-md-none d-lg-block">
                     <span class="iconify langicon" data-inline="false" data-icon="dashicons:flag" style="color: #ffffff; font-size: 20px;"></span>
@@ -87,7 +87,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Pachete si Optiuni</a></li>
                 <li><a href="">Solutii de Tracking</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li class="mobile-language"><p>Language</p><a href="">Ro</a>
                     <a href="">En</a></li>
             </ul>
@@ -143,7 +143,7 @@
                                 <h6 class="point">5. Procedura Instalare</h6>
                                 <h6 class="null">5. Procedura Instalare</h6>
                             </a>
-                            <a href="#" class="butoncontact">Contacteaza-ne</a>   
+                            <a href="contact.html" class="butoncontact">Contacteaza-ne</a>   
                         </div>                        
                     </div>
                     <div class="continut col-xl-7 col-lg-9 col-md-9 offset-md-0 pl-sm-5 col-sm-12 col-12">
@@ -152,42 +152,61 @@
                             <img src="assets/img/solutii/1.svg" alt="">
                             <h3>Acces la harta ta, oriunde</h3>
                             <p class="pr-0 pr-sm-3 pr-md-5 pr-lg-5 pr-xl-5">Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor.  Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.</p>
-                            <a href="#" class="moreinfo" id="comb" data-toggle="modal" data-target="#centralModalSm"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="buton-modal btn btn-primary" data-toggle="modal" data-target="#centralModalSm">
-                                Detalii
-                            </button>
-                            <!-- Central Modal Small -->
-                            <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                                aria-hidden="true">
-                            
-                                <!-- Change class .modal-sm to change the size of the modal -->
+                            <!-- BUTOANE MODAL & CONTINUT -->
+                            <!-- Butoane -->
+                            <div class="container d-flex flex-lg-row flex-md-column flex-sm-column ml-sm-0 detalii-butoane">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="buton-modal btn btn-primary" data-toggle="modal" data-target="#detalii-localizare">
+                                    Detalii
+                                </button>
+                                <a href="#" class="mt-sm-2 mt-md-2 mt-lg-0 ml-lg-3 ml-3 moreinfo" id="comb" data-toggle="modal" data-target="#specificatii-localizare"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            </div>
+                            <!-- /Butoane -->
+                            <!-- Continut: !Atentie! La fiecare modal sa corespunda id-ul cu target-ul din buton!! -->
+                            <div class="modal fade" id="detalii-localizare" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
                                 <div class="modal-dialog modal-md" role="document">
                             
                             
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                    <h4 class="modal-title w-100" id="myModalLabel">Localizarea, aproape de tine</h4>
+                                    <h4 class="modal-title w-100" id="myModalLabel">Modal 1</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
-                                        <br>
-                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
-                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
-                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
-                                        Localizarea se face prin terminale specializate GPS, montate la bordul autovehiculelor. Instalarea si configurarea este facuta de noi, iar pozitia lor este mai apoi disponibila non-stop in aplicatia noastra desktop si mobile. Pe langa pozitia live, in cont aveti istoricul de deplasare pe timp nelimitat.
+                                        Modal body text
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary btn-sm">Save changes</button>
                                     </div>
                                 </div>
                                 </div>
                             </div>
-                            <!-- Central Modal Small -->
+                            <div class="modal fade" id="specificatii-localizare" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Modal 2</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- /Continut -->
+                            <!-- /BUTOANE MODAL & CONTINUT -->
                             <div class="breakline"></div>
                             
                         </div>
@@ -196,7 +215,61 @@
                             <img src="assets/img/solutii/2.svg" alt="">
                             <h3>Istorice, grafice corelate, stil de condus</h3>
                             <p class="pr-0 pr-sm-3 pr-md-5 pr-lg-5 pr-xl-5">Cu ajutorul unor senzori specializati montati in rezervor, puteti monitoriza constant consumul de combustibil si aveti acces la grafice si istoric pe timp nelimitat, pentru a evalua stiluri de condus, furturi sau nereguli aparute. Beneficiati de suport tehnic constant in cazul oricaror probleme sau nelamuriri.</p>
-                            <a href="#" class="moreinfo" id="hugo"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            <!-- BUTOANE MODAL & CONTINUT -->
+                            <!-- Butoane -->
+                            <div class="container d-flex flex-lg-row flex-md-column flex-sm-column ml-sm-0 detalii-butoane">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="buton-modal btn btn-primary" data-toggle="modal" data-target="#detalii-combustibil">
+                                    Detalii
+                                </button>
+                                <a href="#" class="mt-sm-2 mt-md-2 mt-lg-0 ml-lg-3 ml-3 moreinfo" id="comb" data-toggle="modal" data-target="#specificatii-combustibil"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            </div>
+                            <!-- /Butoane -->
+                            <!-- Continut: !Atentie! La fiecare modal sa corespunda id-ul cu target-ul din buton!! -->
+                            <div class="modal fade" id="detalii-combustibil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Combustibil Detalii</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="specificatii-combustibil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Specificatii Combustibil</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- /Continut -->
+                            <!-- /BUTOANE MODAL & CONTINUT -->
                             <div class="breakline"></div>
                         </div>
                         <div class="item" id="taxa">
@@ -204,7 +277,61 @@
                             <img src="assets/img/solutii/3.svg" alt="">
                             <h3>Cum functioneaza</h3>
                             <p class="pr-0 pr-sm-3 pr-md-5 pr-lg-5 pr-xl-5">Disponibila ca extra-optiune, taxarea automata pentru tranzitul in Ungaria se face printr-un sistem unic dezvoltat de noi, care comunica direct cu autoritatile maghiare si plateste automat vigneta pentru fiecare vehicul in parte atunci cand acesta intra pe teritoriul tarii. Acest sistem va poate feri de amenzi nedorite si de timp in plus pierdut de soferi.</p>
-                            <a href="#" class="moreinfo" id="sharing"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            <!-- BUTOANE MODAL & CONTINUT -->
+                            <!-- Butoane -->
+                            <div class="container d-flex flex-lg-row flex-md-column flex-sm-column ml-sm-0 detalii-butoane">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="buton-modal btn btn-primary" data-toggle="modal" data-target="#detalii-taxa">
+                                    Detalii
+                                </button>
+                                <a href="#" class="mt-sm-2 mt-md-2 mt-lg-0 ml-lg-3 ml-3 moreinfo" id="comb" data-toggle="modal" data-target="#specificatii-taxa"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            </div>
+                            <!-- /Butoane -->
+                            <!-- Continut: !Atentie! La fiecare modal sa corespunda id-ul cu target-ul din buton!! -->
+                            <div class="modal fade" id="detalii-taxa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Taxa Detalii</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="specificatii-taxa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Specificatii Taxa</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- /Continut -->
+                            <!-- /BUTOANE MODAL & CONTINUT -->
                             <div class="breakline"></div>
                         </div>
                         <div class="item" id="tracesharing">
@@ -212,7 +339,61 @@
                             <img src="assets/img/solutii/4.svg" alt="">
                             <h3>Mereu in miscare, mereu informat</h3>
                             <p id="cuminstalez" class="pr-0 pr-sm-3 pr-md-5 pr-lg-5 pr-xl-5">Poti impartasi locatia unuia sau mai multor vehicule, cu ajutorul unui cod generat de noi. Partenerii, prietenii sau familia iti pot vizualiza vehiculul oricand fara sa aiba cont. </p>
-                            <a href="#" class="moreinfo"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            <!-- BUTOANE MODAL & CONTINUT -->
+                            <!-- Butoane -->
+                            <div class="container d-flex flex-lg-row flex-md-column flex-sm-column ml-sm-0 detalii-butoane">
+                                <!-- Button Trigger Modal -->
+                                <button type="button" class="buton-modal btn btn-primary" data-toggle="modal" data-target="#detalii-ts">
+                                    Detalii
+                                </button>
+                                <a href="#" class="mt-sm-2 mt-md-2 mt-lg-0 ml-lg-3 ml-3 moreinfo" id="comb" data-toggle="modal" data-target="#specificatii-ts"><p>Citeste specificatia aparatelor</p><img src="assets/arrow.svg" alt="arrow link"></a>
+                            </div>
+                            <!-- /Butoane -->
+                            <!-- Continut: !Atentie! La fiecare modal sa corespunda id-ul cu target-ul din buton!! -->
+                            <div class="modal fade" id="detalii-ts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Tracesharing Detalii</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="specificatii-ts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">            <!-- Change class .modal-sm to change the size of the modal -->
+                                <div class="modal-dialog modal-md" role="document">
+                            
+                            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Specificatii Tracesharing</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Modal body text
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- /Continut -->
+                            <!-- /BUTOANE MODAL & CONTINUT -->
                             <div class="breakline"></div>
                         </div>
                     </div>
@@ -274,7 +455,7 @@
                             - Punctul doi<br>
                             - Punctul trei<br></p>
                         <p>Pentru mai multe detalii nu ezitati sa ne contactati:</p>
-                        <a href="#" class="butoncontact">Contacteaza-ne</a>             
+                        <a href="contact.html" class="butoncontact">Contacteaza-ne</a>             
                         
                         
                     </div>
@@ -321,24 +502,24 @@
                         <a href="">Pachete si Optiuni</a>
                         <a href="">Solutii de Tracking</a>
                         <a href="">Despre Noi</a>
-                        <a href="">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                     <div class="contact footer-area col-lg-4 col-xl-3 col-md-4 col-sm-6 col-6 offset-md-4 offset-sm-4 offset-lg-0 pt-5 pt-lg-0">
                         <div class="footer-title">
                             <h4>Contact</h4>
                         </div>
                         <h5>Dispecerat Tracesharing</h5>
-                        <a class="telmobil" href="tel:0727338298">
+                        <a class="telmobil" href="tel:+&#052;&#048;&#055;&#050;&#055;&#051;&#051;&#056;&#050;&#057;&#056;">
                             <span class="iconify" data-inline="false" data-icon="ant-design:phone-outlined" style="color: #ffffff; font-size: 16px;"></span>
-                            <p>0727-338298</p>    
+                            <p>&#048;&#055;&#050;&#055;&#045;&#051;&#051;&#056;&#050;&#057;&#056;</p>    
                         </a>
-                        <a class="telfix" href="tel:0361401202">
+                        <a class="telfix" href="tel:+&#052;&#048;&#051;&#054;&#049;&#052;&#048;&#049;&#050;&#048;&#050;">
                             <span class="iconify" data-inline="false" data-icon="entypo:old-phone" style="color: #ffffff; font-size: 16px;"></span>
-                            <p>0361-401202</p>    
+                            <p>&#048;&#051;&#054;&#049;&#045;&#052;&#048;&#049;&#050;&#048;&#050;</p>    
                         </a>
-                        <a class="mail" href="mailto:tracesharing@sm-aerocomp.ro">
+                        <a class="mail" href="mailto:&#116;&#114;&#097;&#099;&#101;&#115;&#104;&#097;&#114;&#105;&#110;&#103;&#064;&#115;&#109;&#045;&#097;&#101;&#114;&#111;&#099;&#111;&#109;&#112;&#046;&#114;&#111;">
                             <span class="iconify" data-inline="false" data-icon="ion:mail-outline" style="font-size: 16px;"></span>
-                            <p>tracesharing@sm-aerocomp.ro</p>
+                            <p>&#116;&#114;&#097;&#099;&#101;&#115;&#104;&#097;&#114;&#105;&#110;&#103;&#064;&#115;&#109;&#045;&#097;&#101;&#114;&#111;&#099;&#111;&#109;&#112;&#046;&#114;&#111;</p>
                         </a>
                         <p class="orar"><em>Orar:</em>&nbsp;&nbsp;&nbsp;08:00 - 18:00</p>
                         <p class="urgente">Urgente: 24/24</p>
